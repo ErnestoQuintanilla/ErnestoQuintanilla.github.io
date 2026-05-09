@@ -1,85 +1,90 @@
 <!DOCTYPE html>
+    h2 {
+      font-size: 1.35rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
 
-          <article class="project-card">
-            <span class="tag">C Programming</span>
-            <h3>BattleBoats Game</h3>
-            <p>
-              Implemented core game modules for a two-player Battleship-style game, including agent logic,
-              field tracking, message handling, and negotiation.
-            </p>
-            <div class="project-links">
-              <a href="#">Code</a>
-              <a href="#">Details</a>
-            </div>
-          </article>
+    p {
+      margin-bottom: 10px;
+    }
 
-          <article class="project-card">
-            <span class="tag">Digital Design</span>
-            <h3>FPGA Display System</h3>
-            <p>
-              Designed digital logic modules including counters, ring counters, selectors, button edge detectors,
-              and seven-segment display control.
-            </p>
-            <div class="project-links">
-              <a href="#">Code</a>
-              <a href="#">Details</a>
-            </div>
-          </article>
+    .school {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .detail {
+      color: #555;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+
+        .contact p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .label {
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding-top: 35px;
+      }
+
+      .profile-photo {
+        width: 115px;
+        height: 115px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="header-content">
+        <img class="profile-photo" src="profile.jpg" alt="(future photo)" />
+
+        <div>
+          <h1>Ernesto Quintanilla</h1>
+          <p class="subtitle">Computer Engineering Student | University of California, Santa Cruz</p>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Experience</h2>
-          <p>A quick look at education, technical experience, and hands-on work.</p>
-        </div>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a third-year Computer Engineering student at the University of California, Santa Cruz, with a degree focus in Digital Hardware. I have experience in embedded systems, FPGA design, and microcontrollers.
+        </p>
+      </section>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <span>2023 — Present</span>
-            <h3>University of California, Santa Cruz</h3>
-            <p>Studying Computer Engineering with coursework in programming, digital logic, computer architecture, and embedded systems.</p>
-          </div>
+      <section id="education">
+        <h2>Education</h2>
+        <p class="school">University of California, Santa Cruz</p>
+        <p class="detail">Computer Engineering Major | Electrical Engineering Minor</p>
+        <p class="detail">September 2023 — Expected 2027</p>
+      </section>
 
-          <div class="timeline-item">
-            <span>Technical Experience</span>
-            <h3>Electrical and Hardware Projects</h3>
-            <p>Worked with circuits, microcontrollers, CAD/EDA tools, and debugging hardware-software systems.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="contact-card">
-          <div class="section-heading">
-            <h2>Let’s Connect</h2>
-            <p>
-              I’m open to internship opportunities, project collaboration, and learning more about embedded systems,
-              digital design, and software engineering.
-            </p>
-          </div>
-          <div class="buttons" style="justify-content: center;">
-            <a class="btn primary" href="mailto:your.email@example.com">Email Me</a>
-            <a class="btn secondary" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and GitHub Pages.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <p><span class="label">Email:</span> Ernestojr7@yahoo.com</p>
+        <p><span class="label">GitHub:</span> github.com/ErnestoQuintanilla</p>
+        <p><span class="label">LinkedIn:</span> linkedin.com/in/ernesto-quintanilla-21b329356/</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
